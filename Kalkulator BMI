@@ -1,0 +1,13 @@
+print("Witaj w zdalnym kalkulatorze BMI, proszę odpowiedz na kilka pytań")
+
+waga=int(input("Ile ważysz?: "))#wprowadzanie danych do obliczen
+wzrost = float(input("Jaki masz wzrost(w centymetrach)")) /100
+
+BMI = waga/(wzrost**2)#wzor BMI
+
+if BMI < 18.5:#3 opcje z Wiki
+    print("Twoje BMI wynosi {:.6f} i zgodnie ze skalą, jest to niedowaga." .format(BMI))
+elif 18.5 <= BMI < 25:
+    print("Twoje BMI wynosi {:.6f} i zgodnie ze skalą ma prawidłową wartość. Tak trzymać!" .format(BMI))
+elif BMI >= 25:
+    print("Twoje BMI wynosi {:.6f} i zgodnie ze skalą, masz nadwagę." .format(BMI))
